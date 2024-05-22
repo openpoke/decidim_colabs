@@ -1,3 +1,14 @@
+GIT
+  remote: https://github.com/decidim-ice/decidim-module-decidim_awesome.git
+  revision: 75e1fe695d0990a6f64c5da77ccceda4cd6fba4e
+  branch: develop
+  specs:
+    decidim-decidim_awesome (0.11.0)
+      decidim-admin (>= 0.28.0, < 0.29)
+      decidim-core (>= 0.28.0, < 0.29)
+      deface (>= 1.5)
+      sassc (~> 2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -306,6 +317,12 @@ GEM
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
+    deface (1.9.0)
+      actionview (>= 5.2)
+      nokogiri (>= 1.6)
+      polyglot
+      railties (>= 5.2)
+      rainbow (>= 2.1.0)
     devise (4.9.3)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -545,6 +562,7 @@ GEM
     pg_search (2.3.6)
       activerecord (>= 5.2)
       activesupport (>= 5.2)
+    polyglot (0.3.5)
     premailer (1.16.0)
       addressable
       css_parser (>= 1.6.0)
@@ -693,6 +711,8 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     selenium-webdriver (4.9.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -796,6 +816,7 @@ DEPENDENCIES
   brakeman (~> 5.4)
   byebug (~> 11.0)
   decidim (= 0.28.1)
+  decidim-decidim_awesome!
   decidim-dev (= 0.28.1)
   letter_opener_web (~> 2.0)
   listen (~> 3.1)
