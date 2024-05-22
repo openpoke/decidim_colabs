@@ -36,7 +36,7 @@ group :development do
 end
 
 group :production do
-  gem 'azure-storage-blob', require: false
-  gem 'sidekiq'
+  gem "azure-storage-blob", require: false
+  gem "sidekiq"
   gem "sidekiq-cron"
 end
