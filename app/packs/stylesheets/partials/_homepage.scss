@@ -1,0 +1,15 @@
+.home__menu {
+    background-color: var(--secondary-color);
+}
+
+a#hero-cta {
+    background-color: var(--tertiary-color);
+}
+
+a#hero-cta:hover, #sub_hero a {
+    background-color: var(--primary-color);
+}
+
+#sub_hero a {
+    background-color: var(--success-color);
+}

@@ -6,3 +6,19 @@
 // available at https://docs.decidim.org/en/develop/customize/styles.html#_tailwind_css
 //
 // By default this is empty.
+
+@import "../partials/homepage";
+@import "../partials/footer";
+
+:root{
+    --primary-color: #0184c0;
+    --secondary-color: #140676;
+    --tertiary-color: #dc871c;
+    --success-color: #4eb051;
+    --alert-color: #e52132;
+    --warning-color: #fdc100;
+    --pantone-7710C: #00a3a6;
+    --pantone-1915C: #ea4b80;
+    --pantone-2577C: #9275b3;
+    --pantone-663C: #f0efea;
+}

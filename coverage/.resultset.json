@@ -1,14 +1,10 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/elvia/decidim_colabs/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/home/elvia/decidim_colabs/app/controllers/decidim_controller.rb": {
         "lines": [
+          null,
+          null,
           null,
           null,
           null,
@@ -18,12 +14,24 @@
       },
       "/home/elvia/decidim_colabs/app/controllers/application_controller.rb": {
         "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/elvia/decidim_colabs/app/helpers/application_helper.rb": {
+        "lines": [
+          null,
+          null,
           1,
           null
         ]
       },
       "/home/elvia/decidim_colabs/app/channels/application_cable/channel.rb": {
         "lines": [
+          null,
+          null,
           0,
           0,
           0,
@@ -34,6 +42,8 @@
       },
       "/home/elvia/decidim_colabs/app/channels/application_cable/connection.rb": {
         "lines": [
+          null,
+          null,
           0,
           0,
           0,
@@ -44,6 +54,8 @@
       },
       "/home/elvia/decidim_colabs/app/jobs/application_job.rb": {
         "lines": [
+          null,
+          null,
           0,
           null,
           null,
@@ -74,6 +86,8 @@
       },
       "/home/elvia/decidim_colabs/app/mailers/application_mailer.rb": {
         "lines": [
+          null,
+          null,
           0,
           0,
           0,
@@ -84,6 +98,8 @@
       },
       "/home/elvia/decidim_colabs/app/models/application_record.rb": {
         "lines": [
+          null,
+          null,
           0,
           0,
           0
@@ -92,6 +108,6 @@
         }
       }
     },
-    "timestamp": 1716374211
+    "timestamp": 1716377370
   }
 }
