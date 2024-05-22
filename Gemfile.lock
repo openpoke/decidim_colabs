@@ -338,6 +338,8 @@ GEM
       temple
     erubi (1.12.0)
     escape_utils (1.2.2)
+    et-orbi (1.2.11)
+      tzinfo
     excon (0.92.3)
     extended-markdown-filter (0.7.0)
       html-pipeline (~> 2.9)
@@ -390,6 +392,9 @@ GEM
       activemodel (>= 4.1, < 7.1)
       activesupport (>= 4.1, < 7.1)
       railties (>= 4.1, < 7.1)
+    fugit (1.11.0)
+      et-orbi (~> 1, >= 1.2.11)
+      raabro (~> 1.4)
     gemoji (3.0.1)
     geocoder (1.8.1)
     globalid (1.2.1)
@@ -552,6 +557,7 @@ GEM
     public_suffix (5.0.1)
     puma (6.3.1)
       nio4r (~> 2.0)
+    raabro (1.4.0)
     racc (1.7.2)
     rack (2.2.8)
     rack-attack (6.6.1)
@@ -703,6 +709,10 @@ GEM
       connection_pool (>= 2.3.0)
       rack (>= 2.2.4)
       redis-client (>= 0.19.0)
+    sidekiq-cron (1.12.0)
+      fugit (~> 1.8)
+      globalid (>= 1.0.1)
+      sidekiq (>= 6)
     simplecov (0.22.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
@@ -794,6 +804,7 @@ DEPENDENCIES
   net-smtp (~> 0.3.1)
   puma (>= 6.3.1)
   sidekiq
+  sidekiq-cron
   spring (~> 2.0)
   spring-watcher-listen (~> 2.0)
   web-console (~> 4.2)

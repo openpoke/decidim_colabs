@@ -38,4 +38,5 @@ end
 group :production do
   gem 'azure-storage-blob', require: false
   gem 'sidekiq'
+  gem "sidekiq-cron"
 end
