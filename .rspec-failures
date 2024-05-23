@@ -1,7 +1,0 @@
-example_id                                                      | status | run_time        |
---------------------------------------------------------------- | ------ | --------------- |
-./spec/system/admin/admin_custom_iframe_spec.rb[1:1:1]          | passed | 3.58 seconds    |
-./spec/system/admin/admin_custom_iframe_spec.rb[1:1:2:1]        | passed | 1.01 seconds    |
-./spec/system/admin/admin_decidim_awesome_module_spec.rb[1:1:1] | passed | 2.65 seconds    |
-./spec/system/homepage_spec.rb[1:1]                             | passed | 0.74741 seconds |
-./spec/system/homepage_spec.rb[1:2]                             | passed | 2.22 seconds    |
