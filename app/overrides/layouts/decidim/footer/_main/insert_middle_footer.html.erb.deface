@@ -1,0 +1,3 @@
+<!-- insert_after ".main-footer__top" -->
+
+<%= render "layouts/decidim/footer/middle_footer" %>
