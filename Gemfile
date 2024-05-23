@@ -12,6 +12,7 @@ gem "decidim", "0.28.1"
 # gem "decidim-templates", "0.28.1"
 
 gem "decidim-decidim_awesome", github: "decidim-ice/decidim-module-decidim_awesome", branch: "develop"
+gem "decidim-calendar", git: "https://github.com/openpoke/decidim-module-calendar"
 
 gem "bootsnap", "~> 1.3"
 
