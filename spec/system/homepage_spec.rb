@@ -27,4 +27,15 @@ describe "Homepage" do
     expect(page).to have_xpath("//a[@href = 'https://www.youtube.com/youtube_handler']")
     expect(page).to have_xpath("//a[@href = 'https://www.github.com/github_handler']")
   end
+
+  it "includes the partner logos" do
+    expect(page).to have_content("Catalunya")
+    expect(page).to have_content("The operations of this project are co-financed with")
+  end
+
+  it "displays the footer content correctly" do
+    within '.main-footer__middle' do
+      expect(page).to have_css('.border-t.mx-auto.mb-8', count: 2)
+    end
+  end
 end
