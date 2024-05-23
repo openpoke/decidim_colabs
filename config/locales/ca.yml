@@ -29,9 +29,10 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
-en:
+ca:
   colab:
     footer:
-      text_whom_collaborate: "Col·laboratori Catalunya is driven by:"
+      text_whom_collaborate: "El Col·laboratori Catalunya està impulsat per:"
       text_collaborate_eu_html: |
-        Col·laboratori Catalunya is driven by: The operations of this project are co-financed with <strong>FEDER</strong> funds, intended to encourage the realization of R&D projects in Catalonia and with a high impact on the territory and companies.
+        El Col·laboratori Catalunya està impulsat per: Les operacions d’aquest projecte estan cofinançades amb els fons <strong>FEDER</strong>, destinats a incentivar la realització de projectes d’R+D a Catalunya i amb un alt impacte al territori i a les empreses.
+  

@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Wallop';
+    src: url('fonts/Wallop-Medium.woff') format('woff'),
+         url('fonts/Wallop-Medium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Wallop';
+    src: url("fonts/Wallop-Light.otf") format('otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+body,
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.title-decorator, .home__section-title,
+.home__section-participate-grid__title {
+  font-family: Wallop, sans-serif;
+}
