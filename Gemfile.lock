@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/decidim-ice/decidim-module-calendar.git
+  revision: 0b128ce6da4d0119a952cf171477f534da7c8bf2
+  specs:
+    decidim-calendar (0.28.0)
+      decidim-admin (>= 0.28.0, < 0.29)
+      decidim-core (>= 0.28.0, < 0.29)
+
+GIT
   remote: https://github.com/decidim-ice/decidim-module-decidim_awesome.git
   revision: 75e1fe695d0990a6f64c5da77ccceda4cd6fba4e
   branch: develop
@@ -816,6 +824,7 @@ DEPENDENCIES
   brakeman (~> 5.4)
   byebug (~> 11.0)
   decidim (= 0.28.1)
+  decidim-calendar!
   decidim-decidim_awesome!
   decidim-dev (= 0.28.1)
   deface (>= 1.9)
