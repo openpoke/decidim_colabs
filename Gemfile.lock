@@ -202,6 +202,11 @@ GEM
     decidim-comments (0.28.1)
       decidim-core (= 0.28.1)
       redcarpet (~> 3.5, >= 3.5.1)
+    decidim-conferences (0.28.1)
+      decidim-core (= 0.28.1)
+      decidim-meetings (= 0.28.1)
+      wicked_pdf (~> 2.7)
+      wkhtmltopdf-binary (~> 0.12)
     decidim-core (0.28.1)
       active_link_to (~> 1.0)
       acts_as_list (~> 1.0)
@@ -825,6 +830,7 @@ DEPENDENCIES
   byebug (~> 11.0)
   decidim (= 0.28.1)
   decidim-calendar!
+  decidim-conferences (= 0.28.1)
   decidim-decidim_awesome!
   decidim-dev (= 0.28.1)
   deface (>= 1.9)
