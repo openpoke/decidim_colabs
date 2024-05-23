@@ -8,6 +8,11 @@ footer .main-footer, .main-footer__top, .main-footer__down, footer .mini-footer 
 
 .main-footer__down nav ul li, 
 .mini-footer__content, 
-.main-footer__language-container button{
+.main-footer__language-container button,
+.main-footer__middle {
     color: var(--secondary-color) !important;
+}
+
+.middle-footer-text{
+    inline-size: 600px;
 }

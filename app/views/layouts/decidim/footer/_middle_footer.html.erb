@@ -1,18 +1,20 @@
-<div class="border-t mx-auto mb-8">
-    <div class="text-center mt-8">
-        <%= t("text_whom_collaborate", scope: "colab.footer") %>
+<div class="main-footer__middle text-sm">
+    <div class="border-t mx-auto mb-8">
+        <div class="text-center mt-8">
+            <%= t("text_whom_collaborate", scope: "colab.footer") %>
+        </div>
+        <div class="flex h-8 justify-evenly gap-4 mt-8">
+            <%= image_pack_tag("media/images/generalitat.png") %>
+            <%= image_pack_tag("media/images/logo_i2cat.png") %>
+        </div>
     </div>
-    <div class="flex h-8 justify-evenly gap-4 mt-8">
-        <%= image_pack_tag("media/images/generalitat.png") %>
-        <%= image_pack_tag("media/images/logo_i2cat.png") %>
-    </div>
-</div>
 
-<div class="border-t mx-auto mb-8">
-    <div class="text-center mt-8">
-        <%= t("text_collaborate_eu_html", scope: "colab.footer") %>   
-    </div>
-    <div class="flex h-8 justify-center mt-8">
-        <%= image_pack_tag("media/images/ue_logo.png") %>
+    <div class="flex justify-center flex-col items-center border-t mx-auto mb-8">
+        <div class="middle-footer-text text-center mt-8">
+            <%= t("text_collaborate_eu_html", scope: "colab.footer") %>   
+        </div>
+        <div class="flex w-1/6 justify-center mt-8">
+            <%= image_pack_tag("media/images/ue_logo.png") %>
+        </div>
     </div>
 </div>
