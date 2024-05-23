@@ -1,22 +1,16 @@
 @font-face {
     font-family: 'Wallop';
-    src: url('fonts/Wallop-Medium.woff2') format('woff2');
+    src: url('fonts/Wallop-Medium.woff') format('woff'),
+         url('fonts/Wallop-Medium.woff2') format('woff2');
     font-style: normal;
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'Wallop';
-    src: url('fonts/Wallop-Medium.woff') format('woff');
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Wallop';
     src: url("fonts/Wallop-Light.otf") format('otf');
     font-style: normal;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 body,
