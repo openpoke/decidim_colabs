@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/decidim-ice/decidim-module-calendar
+  remote: https://github.com/decidim-ice/decidim-module-calendar.git
   revision: 0b128ce6da4d0119a952cf171477f534da7c8bf2
   specs:
     decidim-calendar (0.28.0)

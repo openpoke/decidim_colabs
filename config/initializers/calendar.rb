@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Decidim::Calendar.configure do |config|
   # Colors per type of event
   # You can generate a nice color palette here: https://coolors.co
