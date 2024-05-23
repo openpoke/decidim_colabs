@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/decidim-ice/decidim-module-calendar
+  revision: 0b128ce6da4d0119a952cf171477f534da7c8bf2
+  specs:
+    decidim-calendar (0.28.0)
+      decidim-admin (>= 0.28.0, < 0.29)
+      decidim-core (>= 0.28.0, < 0.29)
+
+GIT
   remote: https://github.com/decidim-ice/decidim-module-decidim_awesome.git
   revision: 75e1fe695d0990a6f64c5da77ccceda4cd6fba4e
   branch: develop
@@ -8,14 +16,6 @@ GIT
       decidim-core (>= 0.28.0, < 0.29)
       deface (>= 1.5)
       sassc (~> 2.3)
-
-GIT
-  remote: https://github.com/openpoke/decidim-module-calendar
-  revision: f418f84d839f58230fbf13f4bec7b73b0b21d98e
-  specs:
-    decidim-calendar (0.28.0)
-      decidim-admin (>= 0.28.0, < 0.29)
-      decidim-core (>= 0.28.0, < 0.29)
 
 GEM
   remote: https://rubygems.org/
