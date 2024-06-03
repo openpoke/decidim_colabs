@@ -22,7 +22,7 @@ module OmniAuth
           email: raw_info["user_email"],
           nickname: Decidim::UserBaseEntity.nicknamize(raw_info["user_login"].presence || raw_info["user_nicename"].presence || raw_info["user_email"]),
           name: raw_info["display_name"],
-          image: "https://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(raw_info["user_email"])}"
+          image: "https://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(raw_info["user_email"].to_s)}"
         }
       end
 
