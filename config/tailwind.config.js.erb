@@ -20,10 +20,12 @@ module.exports = {
   // The array must contain all the decidim modules active in the application
   content: [<%= tailwind_content_directories %>].flatMap(directory => [
     `${directory}/app/views/**/*.html.erb`,
+    `${directory}/app/overrides/**/*.html.erb.deface`,
     `${directory}/app/cells/**/*.{rb,erb}`,
     `${directory}/app/helpers/**/*.rb`,
     `${directory}/app/packs/**/*.js`,
-    `${directory}/lib/**/*.rb`
+    `${directory}/lib/**/*.rb`,
+    `${directory}/config/**/*.js.erb`
   ]),
   // Comment out the next line to disable purging the tailwind styles
   // safelist: [{ pattern: /.*/ }],

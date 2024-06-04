@@ -4,7 +4,6 @@
   "dependencies": {
     "@decidim/browserslist-config": "^0.28.1",
     "@decidim/core": "^0.28.1",
-    "@decidim/elections": "^0.28.1",
     "@decidim/webpacker": "^0.28.1",
     "@fullcalendar/core": "^6.1.13",
     "@fullcalendar/daygrid": "^6.1.13",
