@@ -1,26 +1,42 @@
 footer .main-footer, .main-footer__top, .main-footer__down, footer .mini-footer {
-    background-color: var(--pantone-663C) !important;
+  background-color: var(--pantone-663C) !important;
 }
 
 .main-footer__top div {
-    color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
 } 
 
 .main-footer__down nav ul li, 
 .mini-footer__content, 
 .main-footer__language-container button,
 .main-footer__middle {
-    color: var(--secondary-color) !important;
+  color: var(--secondary-color) !important;
 }
 #trigger-dropdown-language-chooser  {
-    background-color: var(--secondary-color) !important;
+  background-color: var(--secondary-color) !important;
 }
 .middle-footer-text{
-    inline-size: 600px;
+  inline-size: 600px;
 }
 
 @media (max-width: 768px) {
-    .middle-footer-text{
-        inline-size: 300px;
-    } 
+  .middle-footer-text{
+    inline-size: 300px;
+  } 
+}
+
+.footer-logos {
+  @apply block;
+
+  a {
+    @apply inline-block mr-8;
+  }
+
+  svg {
+    @apply w-auto h-10;
+
+    path {
+      fill: var(--secondary-color) !important;
+    }
+  }
 }
