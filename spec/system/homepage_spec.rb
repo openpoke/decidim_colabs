@@ -34,8 +34,8 @@ describe "Homepage" do
   end
 
   it "displays the footer content correctly" do
-    within ".main-footer__middle" do
-      expect(page).to have_css(".border-t.mx-auto.mb-8", count: 2)
+    within ".mini-footer__content" do
+      expect(page).to have_css(".footer-logos")
     end
   end
 end
