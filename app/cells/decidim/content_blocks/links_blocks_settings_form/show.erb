@@ -1,0 +1,12 @@
+<% form.fields_for :settings, form.object.settings do |settings_fields| %>
+ <% (1..3).each do |num|  %>
+  <div class="row column pb-4 mb-8 border-b">
+    <%= settings_fields.translated :text_field, :"title#{num}", label: t(".title", num: num) %>
+    <%= settings_fields.text_field :"url#{num}", label: t(".url", num: num) %>
+    <% form.fields_for :images, form.object.images do |images_fields| %>
+      <%= images_fields.upload :"image#{num}", label: t(".image", num: num) %>
+    <% end %>
+  </div>
+<% end %>
+<% end %>
+

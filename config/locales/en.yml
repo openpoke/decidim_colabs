@@ -35,3 +35,11 @@ en:
       text_whom_collaborate: "Col·laboratori Catalunya is driven by:"
       text_collaborate_eu_html: |
         Col·laboratori Catalunya is driven by: The operations of this project are co-financed with <strong>FEDER</strong> funds, intended to encourage the realization of R&D projects in Catalonia and with a high impact on the territory and companies.
+  decidim:
+    content_blocks:
+      links_blocks:
+        name: "Blocks of links"
+      links_blocks_settings_form:
+        title: Label %{num}
+        url: URL or path %{num}
+        image: Image %{num}
