@@ -4,9 +4,10 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", "0.28.1"
-gem "decidim-conferences", "0.28.1"
-gem "decidim-templates", "0.28.1"
+DECIDIM_VERSION = { github: "decidim/decidim", branch: "release/0.28-stable" }.freeze
+gem "decidim", DECIDIM_VERSION
+gem "decidim-conferences", DECIDIM_VERSION
+gem "decidim-templates", DECIDIM_VERSION
 
 gem "decidim-calendar", github: "decidim-ice/decidim-module-calendar"
 gem "decidim-decidim_awesome", github: "decidim-ice/decidim-module-decidim_awesome", branch: "develop"
@@ -24,7 +25,7 @@ group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
   gem "brakeman", "~> 5.4"
-  gem "decidim-dev", "0.28.1"
+  gem "decidim-dev", DECIDIM_VERSION
   gem "net-imap", "~> 0.2.3"
   gem "net-pop", "~> 0.1.1"
   gem "net-smtp", "~> 0.3.1"
