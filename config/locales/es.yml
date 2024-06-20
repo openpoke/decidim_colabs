@@ -35,4 +35,11 @@ es:
       text_whom_collaborate: "El Col·laboratori Catalunya está impulsado por:"
       text_collaborate_eu_html: | 
         El Col·laboratori Catalunya está impulsado por: Las operaciones de este proyecto están cofinanciadas con los fondos <strong>FEDER</strong>, destinados a incentivar la realización de proyectos de I+D en Cataluña y con un alto impacto en el territorio y en las empresas.
-  
+  decidim:
+    content_blocks:
+      links_blocks:
+        name: "Bloques de links"
+      links_blocks_settings_form:
+        title: Texto %{num}
+        url: URL o ruta %{num}
+        image: Imagen %{num}

@@ -13,7 +13,7 @@ gem "decidim-calendar", github: "decidim-ice/decidim-module-calendar"
 gem "decidim-decidim_awesome", github: "decidim-ice/decidim-module-decidim_awesome", branch: "develop"
 gem "decidim-term_customizer", github: "mainio/decidim-module-term_customizer", branch: "main"
 
-gem "bootsnap", "~> 1.3"
+gem "bootsnap", "~> 1.7"
 
 gem "puma", ">= 6.3.1"
 
@@ -24,19 +24,17 @@ gem "deface", ">= 1.9"
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
-  gem "brakeman", "~> 5.4"
+  gem "brakeman"
   gem "decidim-dev", DECIDIM_VERSION
-  gem "net-imap", "~> 0.2.3"
-  gem "net-pop", "~> 0.1.1"
-  gem "net-smtp", "~> 0.3.1"
 end
 
 group :development do
-  gem "letter_opener_web", "~> 2.0"
-  gem "listen", "~> 3.1"
-  gem "spring", "~> 2.0"
-  gem "spring-watcher-listen", "~> 2.0"
-  gem "web-console", "~> 4.2"
+  gem "letter_opener_web"
+  gem "listen"
+  gem "rubocop-faker"
+  gem "spring"
+  gem "spring-watcher-listen"
+  gem "web-console"
 end
 
 group :production do

@@ -1,0 +1,3 @@
+<!-- insert_after "#assembly_members-grid" -->
+
+<%= decidim_paginate paginated_collection %>

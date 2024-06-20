@@ -47,6 +47,8 @@ coverage/*
 # Ignore node modules
 /node_modules
 
+.rubocop-*
+*.sql
 
 # Ignore Tailwind configuration
 tailwind.config.js

@@ -15,3 +15,18 @@ You will need to do some steps before having the app working properly once you h
 1. Fill the rest of the form and submit it.
 
 You are good to go!
+
+
+## Customizations
+
+This application has some addons and customizations over the Decidim defaults:
+
+1. A custom block for the home page called "Blocks of links" that allows to to add 3 of links to the home page.
+  ![Blocks of links](docs/blocks_of_links.png)
+
+2. A syncronization between all the users that log in through an Identity provider (aka. Oauth)2) as members of an assembly.
+  To configure this, you need to set the following environment variables:
+    - `IDENTITY_SYNC_ASSEMBLY_SLUG` the slug of the assembly you want to sync the users to.
+    - `IDENTITY_SYNC_PROVIDER` the name of the oauth2 provider you are using (defaults to `wpoauth`).
+    - `IDENTITY_SYNC_POSITION` the position you want to give to the users as a member in the assembly (defaults to `other`).
+    - `IDENTITY_SYNC_POSITION_OTHER` the position you want to give to the users as a member in the assembly when the position is `other` (defaults to `Participant`)
