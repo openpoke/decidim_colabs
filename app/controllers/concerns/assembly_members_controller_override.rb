@@ -6,12 +6,14 @@ module AssemblyMembersControllerOverride
   included do
     include Decidim::Paginable
 
+    helper_method :paginated_collection
+
     Decidim::Paginable::OPTIONS = [21, 48, 99].freeze
 
     private
 
-    def members
-      @members ||= paginate(current_participatory_space.members.not_ceased)
+    def paginated_collection
+      @paginated_collection ||= paginate(collection)
     end
   end
 end

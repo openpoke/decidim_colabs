@@ -62,3 +62,10 @@ weekly_notifications_digest_job:
   args:
     task: decidim:mailers:notifications_digest_weekly
 
+hourly_oauth_sync_job:
+  cron: "0 * * * *"
+  class: "InvokeRakeTaskJob"
+  queue: default
+  status: <%= ENV["IDENTITY_SYNC_ASSEMBLY_SLUG"].present? ? "enabled" : "disabled" %>
+  args:
+    task: colabs:identity:sync
