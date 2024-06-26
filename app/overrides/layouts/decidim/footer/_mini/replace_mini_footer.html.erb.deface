@@ -25,4 +25,3 @@
 </a>
 </div>
 
-<%= render "layouts/decidim/footer/sponsors_footer" %>
