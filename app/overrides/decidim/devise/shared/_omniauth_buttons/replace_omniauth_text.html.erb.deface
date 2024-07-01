@@ -1,7 +1,7 @@
 <!-- replace "span>erb[loud]:contains('normalize_provider_name(provider).titleize')" -->
 
 <% if provider == :wpoauth %>
-  Col·laboratoris Catalunya
+  <%= t("colab.login.wpoauth") %>
 <% else %>
   <%= normalize_provider_name(provider).titleize %>
 <% end %>

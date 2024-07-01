@@ -37,6 +37,7 @@ en:
         Col·laboratori Catalunya is driven by: The operations of this project are co-financed with <strong>FEDER</strong> funds, intended to encourage the realization of R&D projects in Catalonia and with a high impact on the territory and companies.
     login:
       admin_login: Admin sign-in
+      wpoauth: Mapa d'Agents
   decidim:
     content_blocks:
       links_blocks:

@@ -37,6 +37,7 @@ ca:
         El Col·laboratori Catalunya està impulsat per: Les operacions d’aquest projecte estan cofinançades amb els fons <strong>FEDER</strong>, destinats a incentivar la realització de projectes d’R+D a Catalunya i amb un alt impacte al territori i a les empreses.
     login:
       admin_login: Entrada per administradors
+      wpoauth: Mapa d'Agents
   decidim:
     content_blocks:
       links_blocks:
