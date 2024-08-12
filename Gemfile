@@ -10,7 +10,7 @@ gem "decidim-conferences", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
 gem "decidim-calendar", github: "decidim-ice/decidim-module-calendar"
-gem "decidim-decidim_awesome", github: "decidim-ice/decidim-module-decidim_awesome", branch: "develop"
+gem "decidim-decidim_awesome", github: "decidim-ice/decidim-module-decidim_awesome", branch: "main"
 gem "decidim-term_customizer", github: "mainio/decidim-module-term_customizer", branch: "main"
 
 gem "bootsnap", "~> 1.7"
