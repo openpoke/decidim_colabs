@@ -4,10 +4,8 @@ require "rails_helper"
 
 describe "Homepage" do
   let!(:organization) { create(:organization) }
-  let!(:assembly) { create(:assembly, organization:) }
-  # rubocop:disable FactoryBot/ExcessiveCreateList:
+  let!(:assembly) { create(:assembly, organization:) } # :
   let!(:members) { create_list(:assembly_member, 99, assembly:) }
-  # rubocop:enable FactoryBot/ExcessiveCreateList:
 
   before do
     switch_to_host(organization.host)

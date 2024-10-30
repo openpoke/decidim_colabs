@@ -3,7 +3,7 @@
 namespace :colabs do
   namespace :identity do
     desc "Syncronize users with an identity provider as members of an assembly"
-    task :sync do
+    task sync: [:environment] do
       provider = Rails.application.secrets.colabs.dig(:identity_user_sync, :provider)
       assembly_slug = Rails.application.secrets.colabs.dig(:identity_user_sync, :assembly_slug)
       options = Rails.application.secrets.colabs.dig(:identity_user_sync, :options) || {}

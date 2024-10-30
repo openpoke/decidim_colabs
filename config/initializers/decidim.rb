@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Decidim.configure do |config|
+  config.cache_expiry_time = Decidim::Env.new("CACHE_EXPIRY_TIME").presence&.to_i || 1.minute
   # The name of the application
   config.application_name = Rails.application.secrets.decidim[:application_name]
 
@@ -314,7 +315,10 @@ Decidim.configure do |config|
   # for more information about how it works and how to set it up.
   #
   # Enable machine translations
-  config.enable_machine_translations = false
+  # Enable machine translations
+  config.enable_machine_translations = ENV["TRANSLATOR_API_KEY"].present?
+  config.machine_translation_service = "MicrosoftTranslator"
+  config.machine_translation_delay = Decidim::Env.new("TRANSLATOR_DELAY", "1").to_i.seconds
   #
   # If you want to enable machine translation you can create your own service
   # to interact with third party service to translate the user content.
@@ -393,7 +397,6 @@ Decidim.configure do |config|
 
   # Additional optional configurations (see decidim-core/lib/decidim/core.rb)
   config.cache_key_separator = Rails.application.secrets.decidim[:cache_key_separator] if Rails.application.secrets.decidim[:cache_key_separator].present?
-  config.cache_expiry_time = Rails.application.secrets.decidim[:cache_expiry_time].to_i.minutes if Rails.application.secrets.decidim[:cache_expiry_time].present?
   config.stats_cache_expiry_time = Rails.application.secrets.decidim[:stats_cache_expiry_time].to_i.minutes if Rails.application.secrets.decidim[:stats_cache_expiry_time].present?
   config.expire_session_after = Rails.application.secrets.decidim[:expire_session_after].to_i.minutes if Rails.application.secrets.decidim[:expire_session_after].present?
   config.enable_remember_me = Rails.application.secrets.decidim[:enable_remember_me].present? unless Rails.application.secrets.decidim[:enable_remember_me] == "auto"
