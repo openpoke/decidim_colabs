@@ -4,7 +4,7 @@ module Decidim
   module Assemblies
     module Admin
       # NOTE: To remove when is backported https://github.com/decidim/decidim/pull/13534
-      # 
+      #
       # Controller that allows to manage the content from the assembly landing page content blocks
       class AssemblyLandingPageContentBlocksController < Decidim::Assemblies::Admin::ApplicationController
         include Decidim::Admin::ContentBlocks::LandingPageContentBlocks

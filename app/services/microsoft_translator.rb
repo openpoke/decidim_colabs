@@ -50,7 +50,7 @@ class MicrosoftTranslator
         "to" => @target_locale
       },
       headers: {
-        "Ocp-Apim-Subscription-Key" => ENV["TRANSLATOR_API_KEY"],
+        "Ocp-Apim-Subscription-Key" => ENV.fetch("TRANSLATOR_API_KEY", nil),
         "Ocp-Apim-Subscription-Region" => Decidim::Env.new("TRANSLATOR_REGION", "westeurope").to_s,
         "Content-Type" => "application/json"
       }
