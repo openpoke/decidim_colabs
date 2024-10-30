@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Decidim.configure do |config|
+  config.cache_expiry_time = Decidim::Env.new("CACHE_EXPIRY_TIME").presence&.to_i || 1.minute
   # The name of the application
   config.application_name = Rails.application.secrets.decidim[:application_name]
 
@@ -396,7 +397,6 @@ Decidim.configure do |config|
 
   # Additional optional configurations (see decidim-core/lib/decidim/core.rb)
   config.cache_key_separator = Rails.application.secrets.decidim[:cache_key_separator] if Rails.application.secrets.decidim[:cache_key_separator].present?
-  config.cache_expiry_time = Rails.application.secrets.decidim[:cache_expiry_time].to_i.minutes if Rails.application.secrets.decidim[:cache_expiry_time].present?
   config.stats_cache_expiry_time = Rails.application.secrets.decidim[:stats_cache_expiry_time].to_i.minutes if Rails.application.secrets.decidim[:stats_cache_expiry_time].present?
   config.expire_session_after = Rails.application.secrets.decidim[:expire_session_after].to_i.minutes if Rails.application.secrets.decidim[:expire_session_after].present?
   config.enable_remember_me = Rails.application.secrets.decidim[:enable_remember_me].present? unless Rails.application.secrets.decidim[:enable_remember_me] == "auto"
