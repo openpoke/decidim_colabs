@@ -30,3 +30,19 @@ This application has some addons and customizations over the Decidim defaults:
     - `IDENTITY_SYNC_PROVIDER` the name of the oauth2 provider you are using (defaults to `wpoauth`).
     - `IDENTITY_SYNC_POSITION` the position you want to give to the users as a member in the assembly (defaults to `other`).
     - `IDENTITY_SYNC_POSITION_OTHER` the position you want to give to the users as a member in the assembly when the position is `other` (defaults to `Participant`)
+
+## Automatic Translations
+
+The Azure AI translator API is integrated, ENV vars:
+
+- `TRANSLATOR_API_KEY` the API KEY needed to make it work
+- `TRANSLATOR_REGION` the region associated with your Azure subscription (defaults to `westeurope`)
+- `TRANSLATOR_ENDPOINT` the endpoint for the Azure Translator API (defaults to `https://api.cognitive.microsofttranslator.com`)
+
+Also a rake task is create to allow automatic translation of content already created:
+
+Use with source,target language:
+
+```bash
+bin/rails colabs:translate_all[ca,es]
+```
