@@ -35,6 +35,7 @@ class MicrosoftTranslator
       body = JSON.parse(result.body).first
       if body.first == "error"
         Rails.logger.error("Microsoft Translator API error: #{body.second}")
+        raise StandardError, body
       else
         body["translations"].first["text"]
       end
