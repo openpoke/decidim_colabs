@@ -12,14 +12,40 @@
 @import "../partials/footer";
 
 :root{
-    --primary-color: #0184c0;
-    --secondary-color: #140676;
-    --tertiary-color: #dc871c;
-    --success-color: #4eb051;
-    --alert-color: #e52132;
-    --warning-color: #fdc100;
-    --pantone-7710C: #00a3a6;
-    --pantone-1915C: #ea4b80;
-    --pantone-2577C: #9275b3;
-    --pantone-663C: #f0efea;
+  --primary-color: #0184c0;
+  --secondary-color: #140676;
+  --tertiary-color: #dc871c;
+  --success-color: #4eb051;
+  --alert-color: #e52132;
+  --warning-color: #fdc100;
+  --pantone-7710C: #00a3a6;
+  --pantone-1915C: #ea4b80;
+  --pantone-2577C: #9275b3;
+  --pantone-663C: #f0efea;
+}
+
+.main-bar__links-desktop {
+  @media (min-width: 768px){
+    [data-target*=dropdown] {
+      display: flex !important;
+    }
+  }
+  .main-header__language-trigger {
+    > svg {
+      display: block !important;
+    }
+  }
+  .main-header__language-chooser {
+    @apply relative z-10;
+
+    > ul {
+      @apply absolute left-0 bg-white p-4 shadow-md text-left;
+      >li {
+        @apply text-secondary text-md hover:underline hover:bg-secondary hover:text-white transition;
+        >a {
+          @apply p-2 w-full block;
+        }
+      }
+    }
+  }
 }

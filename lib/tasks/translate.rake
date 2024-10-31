@@ -24,6 +24,7 @@ namespace :colabs do
           translator = MicrosoftTranslator.new(resource, field, text, args[:to], args[:from])
           puts "Translating #{model.name}##{resource.id} #{field} from #{args[:from]} to #{args[:to]}"
           translator.translate!
+          sleep 0.5 # Avoid rate limiting
         end
       end
     end
