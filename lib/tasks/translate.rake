@@ -10,22 +10,32 @@ namespace :colabs do
       next unless model.translatable_fields_list.any?
 
       puts "Translating #{model.name} fields: #{model.translatable_fields_list.join(", ")}"
-      model.find_each do |resource|
-        model.translatable_fields_list.each do |field|
-          next unless resource[field].is_a?(Hash)
 
-          if resource[field][args[:to]].present?
-            puts "Skipping #{model.name}##{resource.id} #{field} because it already has a translation"
-            next
+      begin
+        model.find_each do |resource|
+          model.translatable_fields_list.each do |field|
+            next unless resource[field].is_a?(Hash)
+
+            if resource[field][args[:to]].present?
+              puts "Skipping #{model.name}##{resource.id} #{field} because it already has a manual translation"
+              next
+            end
+            if resource[field]["machine_translations"].present? && resource[field]["machine_translations"][args[:to]].present?
+              puts "Skipping #{model.name}##{resource.id} #{field} because it already has a machine translation"
+              next
+            end
+            text = resource[field][args[:from]]
+            next if text.blank?
+
+            translator = MicrosoftTranslator.new(resource, field, text, args[:to], args[:from])
+            puts "Translating #{model.name}##{resource.id} #{field} from #{args[:from]} to #{args[:to]}"
+
+            translator.translate!
+            sleep 0.5 # Avoid rate limiting
           end
-          text = resource[field][args[:from]]
-          next if text.blank?
-
-          translator = MicrosoftTranslator.new(resource, field, text, args[:to], args[:from])
-          puts "Translating #{model.name}##{resource.id} #{field} from #{args[:from]} to #{args[:to]}"
-          translator.translate!
-          sleep 0.5 # Avoid rate limiting
         end
+      rescue ActiveRecord::StatementInvalid => e
+        puts "Skipping #{model.name} due to #{e.message}"
       end
     end
   end

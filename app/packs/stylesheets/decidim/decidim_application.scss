@@ -27,12 +27,13 @@
 .main-bar__links-desktop {
   @media (min-width: 768px){
     [data-target*=dropdown] {
-      display: flex !important;
-    }
-  }
-  .main-header__language-trigger {
-    > svg {
-      display: block !important;
+      @apply block;
+      div {
+        @apply block text-secondary text-sm text-center;
+        svg {
+          @apply inline-block;
+        }
+      }
     }
   }
   .main-header__language-chooser {
