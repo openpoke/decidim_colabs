@@ -46,6 +46,7 @@ coverage/*
 
 # Ignore node modules
 /node_modules
+/packages/*/node_modules
 
 .rubocop-*
 *.sql
