@@ -38,6 +38,7 @@
 .rbenv-vars
 .rspec-failures
 coverage/*
+mise.toml
 
 # Ignore the files and folders generated through Webpack
 /public/decidim-packs
@@ -46,6 +47,7 @@ coverage/*
 
 # Ignore node modules
 /node_modules
+/packages/*/node_modules
 
 .rubocop-*
 *.sql
