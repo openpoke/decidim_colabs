@@ -20,7 +20,7 @@ module OmniAuth
       info do
         {
           email: raw_info["user_email"],
-          nickname: Decidim::UserBaseEntity.nicknamize(raw_info["user_login"].presence || raw_info["user_nicename"].presence || raw_info["user_email"]),
+          nickname: Decidim::UserBaseEntity.nicknamize(raw_info["user_login"].presence || raw_info["user_nicename"].presence || raw_info["user_email"], current_organization.id),
           name: raw_info["display_name"],
           image: "https://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(raw_info["user_email"].to_s)}"
         }
@@ -43,6 +43,12 @@ module OmniAuth
 
       def sanitized_nickname
         # TODO: restrict nicknamize to the current organization
+      end
+
+      private
+
+      def current_organization
+        @current_organization ||= Decidim::Organization.find_by(host: request.host)
       end
     end
   end

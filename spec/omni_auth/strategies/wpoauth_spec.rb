@@ -13,6 +13,7 @@ describe OmniAuth::Strategies::Wpoauth do
     strategy
   end
 
+  let(:organization) { create(:organization) }
   let(:access_token) { instance_double("AccessToken", options: {}) }
   let(:parsed_response) { instance_double("ParsedResponse") }
   let(:response) { instance_double("Response", parsed: parsed_response) }
@@ -27,7 +28,7 @@ describe OmniAuth::Strategies::Wpoauth do
   end
   let(:app) do
     lambda do |_env|
-      [200, {}, ["Hello."]]
+      [200, { "HTTP_HOST" => organization.host }, ["Hello."]]
     end
   end
   let(:uid) { { "id" => "123" } }
@@ -91,6 +92,7 @@ describe OmniAuth::Strategies::Wpoauth do
   describe "info" do
     before do
       allow(strategy).to receive(:raw_info).and_return(raw_info_hash)
+      allow(strategy).to receive(:current_organization).and_return(organization)
     end
 
     it "returns the name" do
@@ -106,7 +108,7 @@ describe OmniAuth::Strategies::Wpoauth do
     end
 
     context "when nickname already exists" do
-      let!(:existing_user) { create(:user, nickname: "arthur") }
+      let!(:existing_user) { create(:user, nickname: "arthur", organization:) }
 
       it "returns a new valid nickname" do
         expect(subject.info[:nickname]).to eq("arthur_2")

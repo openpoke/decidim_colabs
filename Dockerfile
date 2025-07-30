@@ -1,4 +1,4 @@
-FROM ruby:3.1 AS builder
+FROM ruby:3.2.8 AS builder
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y ca-certificates curl gnupg && \
     mkdir -p /etc/apt/keyrings && \
@@ -20,6 +20,7 @@ WORKDIR /app
 # Copy package dependencies files only to ensure maximum cache hit
 COPY ./package-lock.json /app/package-lock.json
 COPY ./package.json /app/package.json
+COPY ./packages /app/packages
 COPY ./Gemfile /app/Gemfile
 COPY ./Gemfile.lock /app/Gemfile.lock
 
@@ -49,11 +50,9 @@ COPY ./bin /app/bin
 COPY ./config /app/config
 COPY ./db /app/db
 COPY ./lib /app/lib
-COPY ./packages /app/packages
 COPY ./public/*.* /app/public/
 COPY ./config.ru /app/config.ru
 COPY ./Rakefile /app/Rakefile
-COPY ./babel.config.json /app/babel.config.json
 COPY ./postcss.config.js /app/postcss.config.js
 
 # Compile assets with Webpacker or Sprockets
@@ -76,10 +75,10 @@ RUN RAILS_ENV=production \
 RUN mv config/credentials.yml.enc.bak config/credentials.yml.enc 2>/dev/null || true
 RUN mv config/credentials.bak config/credentials 2>/dev/null || true
 
-RUN rm -rf node_modules tmp/cache vendor/bundle test spec app/packs .git
+RUN rm -rf node_modules packages/*/node_modules tmp/cache vendor/bundle test spec app/packs .git
 
 # This image is for production env only
-FROM ruby:3.1-slim AS final
+FROM ruby:3.2.8-slim AS final
 
 RUN apt-get update && \
     apt-get install -y postgresql-client \

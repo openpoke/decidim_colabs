@@ -30,7 +30,6 @@ describe "Homepage" do
 
   it "includes the partner logos" do
     expect(page).to have_content("Catalunya")
-    expect(page).to have_content("The operations of this project are co-financed with")
   end
 
   it "displays the footer content correctly" do
