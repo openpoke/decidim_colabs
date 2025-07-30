@@ -211,6 +211,16 @@ GIT
       decidim-admin (~> 0.29.0)
       decidim-core (~> 0.29.0)
 
+GIT
+  remote: https://github.com/platoniq/decidim-module-alternative_landing.git
+  revision: 19c7299ca5d4c886bce368af7258f3a229fdfc85
+  branch: release/0.29-stable
+  specs:
+    decidim-alternative_landing (0.5.0)
+      decidim-admin (>= 0.29.0, < 0.30)
+      decidim-core (>= 0.29.0, < 0.30)
+      redcarpet (~> 3.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -924,6 +934,7 @@ DEPENDENCIES
   brakeman
   byebug (~> 11.0)
   decidim!
+  decidim-alternative_landing!
   decidim-calendar!
   decidim-conferences!
   decidim-decidim_awesome!
