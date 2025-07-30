@@ -9,15 +9,9 @@ checksums = [
   {
     package: "decidim-core",
     files: {
-      "/app/views/layouts/decidim/footer/_main.html.erb" => "86e880bb7751c32efbb53fadec653454",
+      "/app/views/layouts/decidim/footer/_mini.html.erb" => "ccead2f5f20557ea4db1501de943f82b",
       "/app/views/decidim/devise/sessions/new.html.erb" => "a8fe60cd10c1636822c252d5488a979d",
-      "/app/views/decidim/shared/_login_modal.html.erb" => "a29d4fcebe8c689044e3c15f6144f3d1"
-    }
-  },
-  {
-    package: "decidim-assemblies",
-    files: {
-      "/app/controllers/decidim/assemblies/assembly_members_controller.rb" => "034ddcea13189ad58fdf4e92f66e3d83"
+      "/app/views/decidim/shared/_login_modal.html.erb" => "0d615603bb45f7b209032578dda9fc72"
     }
   }
 ]
