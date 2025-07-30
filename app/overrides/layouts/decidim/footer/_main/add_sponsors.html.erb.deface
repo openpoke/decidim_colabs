@@ -1,3 +1,0 @@
-<!-- insert_before ".main-footer__down" -->
-
-<%= render "layouts/decidim/footer/sponsors_footer" %>

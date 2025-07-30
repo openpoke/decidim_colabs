@@ -1,4 +1,8 @@
-<!-- replace ".mini-footer__content" -->
+<!-- replace ".mini-footer" -->
+<div class="mini-footer bg-white">
+  <div>
+    <%= render "layouts/decidim/footer/sponsors_footer" %>
+  </div>
 
 <div class="mini-footer__content">
 <div>
@@ -24,4 +28,4 @@
   <%= icon "creative-commons-sa-line", class: "w-6 h-6 fill-current" %>
 </a>
 </div>
-
+</div>
