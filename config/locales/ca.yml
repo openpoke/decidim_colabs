@@ -30,6 +30,9 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 ca:
+  noesfeinadedones:
+    footer:
+      text: "Noésfeinadedones? és un projecte impulsat per:"
   colab:
     footer:
       text_whom_collaborate: "El Col·laboratori Catalunya està impulsat per:"
