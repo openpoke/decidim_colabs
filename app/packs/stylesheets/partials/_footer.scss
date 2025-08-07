@@ -6,6 +6,12 @@ footer {
   .mini-footer, .mini-footer__content {
     @apply bg-white text-black;
   }
+  
+  .main-footer__middle {
+    a {
+      width: 200px;
+    }
+  }
 
   .footer-logos {
     @apply block;

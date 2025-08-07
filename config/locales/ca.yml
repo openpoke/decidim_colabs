@@ -33,6 +33,11 @@ ca:
   noesfeinadedones:
     footer:
       text: "Noésfeinadedones? és un projecte impulsat per:"
+      generalitat: "Generalitat de Catalunya"
+      telecos: "Associació Catalana d'Enginyeria de Telecomunicació"
+      i2cat: "Fundació i2CAT"
+      nextgeneration: "Finançat per la Unió Europea. Next Generation EU"
+      nextgeneration-catalunya: "Next Generation Catalunya"
   colab:
     footer:
       text_whom_collaborate: "El Col·laboratori Catalunya està impulsat per:"
