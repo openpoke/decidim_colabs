@@ -13,3 +13,61 @@ a#hero-cta:hover, #sub_hero a {
 #sub_hero a {
     background-color: var(--success-color);
 }
+
+#html-block-html {
+  span {
+    @apply uppercase;
+    color: #f65d9d;
+  }
+
+  .home__section-title {
+    @apply uppercase font-bold text-5xl;
+  }
+
+  p {
+    @apply text-balance text-xl;
+  }
+
+  a.button {
+    @apply mt-4 mb-4;
+  }
+
+  #referents {
+    background-image: url("images/star.gif");
+    background-repeat: no-repeat;
+    background-size: 40% auto;
+    background-position: right;
+
+    @media (min-width: 768px) {
+      background-size: contain;
+    }
+
+    .card {
+      width: 50%;
+    }
+  }
+
+  &:has(#mentoring) {
+    display: grid;
+    min-height: 100vh;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      min-height: 500px;
+    }
+
+    div.image {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      min-height: 500px;
+    }
+
+    #mentoring {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+}
