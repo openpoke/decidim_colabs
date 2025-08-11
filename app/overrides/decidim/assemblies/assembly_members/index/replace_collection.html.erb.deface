@@ -1,3 +1,0 @@
-<!-- replace "erb[loud]:contains('render(collection)')" -->
-
-<%= render paginated_collection %>
