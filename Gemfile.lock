@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/decidim-ice/decidim-module-decidim_awesome.git
-  revision: b4c50032542f7295163645b04f494fd00f8c87bb
+  revision: 72989770a81d5c1f03ddbe6f9d459a6bfdd6b922
   branch: main
   specs:
     decidim-decidim_awesome (0.12.3)
@@ -21,7 +21,7 @@ GIT
 
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: be69f9863295970c4bbf883886911f54fcf24d4b
+  revision: d6d17c566caa98f91112ff786e7af67cb0c4faa3
   branch: release/0.29-stable
   specs:
     decidim (0.29.4)
@@ -203,6 +203,16 @@ GIT
       decidim-core (= 0.29.4)
 
 GIT
+  remote: https://github.com/openpoke/decidim-module-alternative_landing.git
+  revision: 1748bde839f7d7f17d9295058de9eb03210bf6ad
+  branch: feat/0.29_content_block_sidebar_2_stack
+  specs:
+    decidim-alternative_landing (0.5.0)
+      decidim-admin (>= 0.29.0, < 0.30)
+      decidim-core (>= 0.29.0, < 0.30)
+      redcarpet (~> 3.4)
+
+GIT
   remote: https://github.com/openpoke/decidim-module-term_customizer.git
   revision: 1f61d02b13fada32b9b4e0a4adb716e6ed30bcd9
   branch: main
@@ -210,16 +220,6 @@ GIT
     decidim-term_customizer (0.29.1)
       decidim-admin (~> 0.29.0)
       decidim-core (~> 0.29.0)
-
-GIT
-  remote: https://github.com/platoniq/decidim-module-alternative_landing.git
-  revision: 19c7299ca5d4c886bce368af7258f3a229fdfc85
-  branch: release/0.29-stable
-  specs:
-    decidim-alternative_landing (0.5.0)
-      decidim-admin (>= 0.29.0, < 0.30)
-      decidim-core (>= 0.29.0, < 0.30)
-      redcarpet (~> 3.4)
 
 GEM
   remote: https://rubygems.org/
@@ -411,7 +411,7 @@ GEM
       temple
     erubi (1.13.1)
     escape_utils (1.3.0)
-    et-orbi (1.2.11)
+    et-orbi (1.3.0)
       tzinfo
     excon (1.2.8)
       logger
@@ -467,7 +467,8 @@ GEM
       mime-types
     fog-local (0.9.0)
       fog-core (>= 1.27, < 3.0)
-    formatador (1.1.1)
+    formatador (1.2.0)
+      reline
     foundation_rails_helper (4.0.1)
       actionpack (>= 4.1, < 7.1)
       activemodel (>= 4.1, < 7.1)
@@ -525,7 +526,7 @@ GEM
     invisible_captcha (0.13.0)
       rails (>= 3.2.0)
     io-console (0.8.1)
-    json (2.13.1)
+    json (2.13.2)
     jwt (3.1.2)
       base64
     kaminari (1.2.2)
@@ -570,7 +571,7 @@ GEM
     mime-types (3.7.0)
       logger
       mime-types-data (~> 3.2025, >= 3.2025.0507)
-    mime-types-data (3.2025.0722)
+    mime-types-data (3.2025.0805)
     mini_magick (4.13.2)
     mini_mime (1.1.5)
     minitest (5.25.5)
@@ -673,7 +674,7 @@ GEM
     psych (4.0.6)
       stringio
     public_suffix (6.0.2)
-    puma (6.6.0)
+    puma (6.6.1)
       nio4r (~> 2.0)
     raabro (1.4.0)
     racc (1.8.1)
@@ -735,9 +736,9 @@ GEM
       ffi (~> 1.0)
     redcarpet (3.6.1)
     redis (4.8.1)
-    redis-client (0.25.1)
+    redis-client (0.25.2)
       connection_pool
-    regexp_parser (2.10.0)
+    regexp_parser (2.11.1)
     reline (0.6.2)
       io-console (~> 0.5)
     request_store (1.5.1)
@@ -842,7 +843,7 @@ GEM
       logger
       rack (>= 2.2.4)
       redis-client (>= 0.22.2)
-    sidekiq-cron (2.3.0)
+    sidekiq-cron (2.3.1)
       cronex (>= 0.13.0)
       fugit (~> 1.8, >= 1.11.1)
       globalid (>= 1.0.1)
@@ -860,7 +861,7 @@ GEM
     snaky_hash (2.0.3)
       hashie (>= 0.1.0, < 6)
       version_gem (>= 1.1.8, < 3)
-    spring (4.3.0)
+    spring (4.4.0)
     spring-watcher-listen (2.1.0)
       listen (>= 2.7, < 4.0)
       spring (>= 4)
