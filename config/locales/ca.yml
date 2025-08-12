@@ -30,6 +30,14 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 ca:
+  noesfeinadedones:
+    footer:
+      text: "Una iniciativa del centre de recerca i2CAT i de Telecos.cat, en el marc del projecte Noesfeinadedones, amb número d’expedient SDC005/24/000358. Amb el suport de la Generalitat de Catalunya i finançada pel programa Next Generation EU."
+      generalitat: "Generalitat de Catalunya"
+      telecos: "Associació Catalana d'Enginyeria de Telecomunicació"
+      i2cat: "Fundació i2CAT"
+      nextgeneration: "Finançat per la Unió Europea. Next Generation EU"
+      nextgeneration-catalunya: "Next Generation Catalunya"
   colab:
     footer:
       text_whom_collaborate: "El Col·laboratori Catalunya està impulsat per:"
