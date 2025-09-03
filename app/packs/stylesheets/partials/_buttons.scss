@@ -1,0 +1,9 @@
+.button__secondary {
+    background: linear-gradient(to right, #f458d1, #7dd0f1);
+    color: black;
+    border-color: black;
+
+    &:hover {
+        background: #f458d1 !important;
+    }
+}
