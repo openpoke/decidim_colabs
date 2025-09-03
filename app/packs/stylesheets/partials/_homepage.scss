@@ -3,9 +3,19 @@
 }
 .home__menu-element--link {
   color: black;
+  &:hover {
+    color: #f65d9d;
+    text-decoration: underline;
+  }
 }
 
 #html-block-html {
+  &:first-child {
+    max-width: 100%;
+    background: black;
+    color: white;
+  }
+
   span {
     @apply uppercase;
     color: #f65d9d;
