@@ -10,12 +10,6 @@
 }
 
 #html-block-html {
-  &:first-child {
-    max-width: 100%;
-    background: black;
-    color: white;
-  }
-
   span {
     @apply uppercase;
     color: #f65d9d;
