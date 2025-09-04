@@ -93,12 +93,19 @@
     }
     
     div.left {
+      @media (max-width: 768px) {
+        grid-column: span 2;
+      }
     }
     div.right {
       background-image: url("images/background_table.jpeg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: top right;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
 }
