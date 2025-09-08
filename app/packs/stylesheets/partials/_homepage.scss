@@ -1,38 +1,69 @@
 .home__menu {
-    background-color: var(--secondary-color);
+  background-color: white;
 }
-
-a#hero-cta {
-    background-color: var(--tertiary-color);
-}
-
-a#hero-cta:hover, #sub_hero a {
-    background-color: var(--primary-color);
-}
-
-#sub_hero a {
-    background-color: var(--success-color);
+.home__menu-element--link {
+  color: black;
+  &:hover {
+    color: #f65d9d;
+    text-decoration: underline;
+  }
 }
 
 #html-block-html {
+  max-width: 100%;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   span {
     @apply uppercase;
     color: #f65d9d;
   }
-
+  
   .home__section-title {
     @apply uppercase font-bold text-5xl;
   }
-
+  
   p {
     @apply text-balance text-xl;
   }
-
+  
   a.button {
     @apply mt-4 mb-4;
   }
+  
+  #referents,#mentoring{
+    padding-right: 1rem;
+    padding-left: 1rem;
+    @media (min-width: 640px) {
+      width: 640px;
+    }
+    @media (min-width: 768px) {
+      width: 768px;
+    }
+    @media (min-width: 1024px) {
+      width: 1024px;
+      padding-right: 4rem;
+      padding-left: 4rem;
+    }
+    @media (min-width: 1280px) {
+      width: 1280px;
+    }
+    @media (min-width: 1536px) {
+      width: 1536px;
+    }
+  }
+  
+  &:has(#referents) {
+    background: black;
+    color: white;
+  }
 
   #referents {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     background-image: url("images/star.gif");
     background-repeat: no-repeat;
     background-size: 40% auto;
@@ -47,27 +78,35 @@ a#hero-cta:hover, #sub_hero a {
     }
   }
 
-  &:has(#mentoring) {
+  &:has(#mentoring) {   
+  }
+  
+  #mentoring {
+    padding-right: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     display: grid;
-    min-height: 100vh;
-
-    @media (min-width: 768px) {
-      grid-template-columns: 1fr 1fr;
-      min-height: 500px;
+    grid-template-columns: 3fr 2fr;
+    height: 100%;
+    > div {
+      height: 100%;
     }
-
-    div.image {
+    
+    div.left {
+      @media (max-width: 768px) {
+        grid-column: span 2;
+      }
+    }
+    div.right {
+      background-image: url("images/background_table.jpeg");
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;
+      background-position: top right;
 
-      min-height: 500px;
-    }
-
-    #mentoring {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
 }
+
