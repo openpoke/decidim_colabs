@@ -53,3 +53,20 @@
     }
   }
 }
+
+#form-search_topbar {
+  background-color: transparent;
+  
+  input {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  button {
+    opacity: 1 !important;
+  }
+  
+  &.search-active input {
+    opacity: 1;
+  }
+}
