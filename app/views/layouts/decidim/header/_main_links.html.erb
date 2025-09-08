@@ -1,8 +1,8 @@
 <div class="main-bar__links-desktop__item-wrapper">
-  <div class="flex justify-between items-center gap-4">
+  <div class="flex justify-between items-center gap-6">
     <% breadcrumb_root_menu.items.each do |menu_item| %>
       <% if menu_item.visible? && menu_item.identifier != :root %>
-        <%= link_to menu_item.url, class: "" do %>
+        <%= link_to menu_item.url, class: "home__menu-element--link" do %>
           <%= menu_item.label %>
         <% end %>
       <% end %>
