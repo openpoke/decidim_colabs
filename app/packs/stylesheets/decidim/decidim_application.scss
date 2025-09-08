@@ -53,6 +53,12 @@
       }
     }
   }
+
+  &__item {
+    span {
+      @apply whitespace-nowrap;
+    }
+  }
 }
 
 #form-search_topbar {
