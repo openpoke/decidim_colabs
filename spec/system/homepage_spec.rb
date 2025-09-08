@@ -18,10 +18,12 @@ describe "Homepage" do
   end
 
   it "displays the main-bar__links" do
-    expect(page).to have_css(".main-bar__links-desktop__item-wrapper")
-    expect(page).to have_css(".main-bar__links-desktop__item-wrapper a", text: "Calendar")
-    expect(page).to have_no_css(".main-bar__links-desktop__item", text: "Help")
-    expect(page).to have_no_css(".main-bar__links-desktop__item", text: "Activity")
+    within "header" do
+      expect(page).to have_css(".main-bar__links-desktop__item-wrapper")
+      expect(page).to have_css(".main-bar__links-desktop__item-wrapper a", text: "Calendar")
+      expect(page).to have_no_css(".main-bar__links-desktop__item", text: "Help")
+      expect(page).to have_no_css(".main-bar__links-desktop__item", text: "Activity")
+    end
   end
 
   it "includes the platform name in the footer" do
