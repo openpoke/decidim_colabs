@@ -1,8 +1,11 @@
 <div class="main-bar__links-desktop__item-wrapper">
   <div class="flex justify-between items-center gap-4">
+    <div role="search" class="main-bar__search">
+      <%= render partial: "layouts/decidim/header/main_search" %>
+    </div>
     <% breadcrumb_root_menu.items.each do |menu_item| %>
       <% if menu_item.visible? && menu_item.identifier != :root %>
-        <%= link_to menu_item.url, class: "home__menu-element--link" do %>
+        <%= link_to menu_item.url, class: "home__menu-element--link menu-link" do %>
           <%= menu_item.label %>
         <% end %>
       <% end %>

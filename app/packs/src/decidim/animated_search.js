@@ -1,12 +1,9 @@
-/**
- * Animated search with opacity control
- */
 export default class AnimatedSearch {
   constructor() {
     this.form = document.getElementById("form-search_topbar");
     this.input = this.form?.querySelector("#input-search");
-    this.searchButton = this.form?.querySelector('button[type="submit"][aria-label="Search"]');
-    this.menuWrapper = document.querySelector(".main-bar__links-desktop__item-wrapper");
+    this.searchButton = this.form?.querySelector('button[type="submit"]');
+    this.menuLinks = document.querySelectorAll(".menu-link");
     this.isSearchActive = false;
     
     if (this.form && this.searchButton && this.input) {
@@ -15,45 +12,37 @@ export default class AnimatedSearch {
   }
 
   init() {
-    this.searchButton.addEventListener("click", (event) => {
-      event.preventDefault();
-      event.stopPropagation();
-      this.toggleSearch();
-    });
+    this.searchButton.addEventListener("click", this.handleSearchClick.bind(this));
+    document.addEventListener("click", this.handleDocumentClick.bind(this));
+    this.form.addEventListener("click", (event) => event.stopPropagation());
+  }
 
-    document.addEventListener("click", (event) => {
-      if (!this.form.contains(event.target)) {
-        this.hideSearch();
-      }
-    });
+  handleSearchClick(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    this.toggleSearch();
+  }
 
-    this.form.addEventListener("click", (event) => {
-      event.stopPropagation();
-    });
+  handleDocumentClick(event) {
+    if (!this.form.contains(event.target)) {
+      this.hideSearch();
+    }
   }
 
   toggleSearch() {
-    if (this.isSearchActive) {
-      this.form.submit();
-    } else {
-      this.showSearch();
-    }
+    this.isSearchActive ? this.form.submit() : this.showSearch();
   }
 
   showSearch() {
     this.isSearchActive = true;
     this.form.classList.add("search-active");
-    if (this.menuWrapper) {
-      this.menuWrapper.style.display = "none";
-    }
+    this.menuLinks.forEach(link => link.style.display = "none");
     this.input.focus();
   }
 
   hideSearch() {
     this.isSearchActive = false;
     this.form.classList.remove("search-active");
-    if (this.menuWrapper) {
-      this.menuWrapper.style.display = "block";
-    }
+    this.menuLinks.forEach(link => link.style.display = "inline");
   }
 }
