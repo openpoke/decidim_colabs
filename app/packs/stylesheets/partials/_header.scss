@@ -3,3 +3,18 @@
     @apply px-0;
   }
 }
+
+header .main-bar__search {
+  grid-column-start: 4;
+}
+
+header .main-bar__links-desktop {
+  grid-column: 6 / -1;
+  justify-self: end;
+}
+
+@media (max-width: 1023px) {
+  header .main-bar__links-desktop {
+    @apply hidden;
+  }
+}
