@@ -1,3 +1,3 @@
 <!-- replace "erb[loud]:contains('layouts/decidim/header/main_search')" -->
 
-<%= render partial: "layouts/decidim/header/animated_search", locals: {params:} %>
+<%= render partial: "layouts/decidim/header/animated_search" %>
