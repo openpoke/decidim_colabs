@@ -1,3 +1,0 @@
-<!-- replace "erb[loud]:contains('layouts/decidim/header/main_links_desktop')" -->
-
-<%= render partial: "layouts/decidim/header/main_links" %>
