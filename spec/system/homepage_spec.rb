@@ -19,10 +19,10 @@ describe "Homepage" do
 
   it "displays the main-bar__links" do
     within "header" do
-      expect(page).to have_css(".main-bar__links-desktop__item-wrapper")
-      expect(page).to have_css(".main-bar__links-desktop__item-wrapper a", text: "Calendar")
-      expect(page).to have_no_css(".main-bar__links-desktop__item", text: "Help")
-      expect(page).to have_no_css(".main-bar__links-desktop__item", text: "Activity")
+      expect(page).to have_css(".main-bar__links-desktop__item-wrapper", visible: :visible)
+      expect(page).to have_content("Calendar")
+      expect(page).to have_no_content("Help")
+      expect(page).to have_no_content("Activity")
     end
   end
 
