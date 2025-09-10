@@ -17,6 +17,15 @@ describe "Homepage" do
     visit decidim.root_path
   end
 
+  it "displays the main-bar__links" do
+    within "header" do
+      expect(page).to have_css(".main-bar__links-desktop__item-wrapper", visible: :visible)
+      expect(page).to have_content("Calendar")
+      expect(page).to have_no_content("Help")
+      expect(page).to have_no_content("Activity")
+    end
+  end
+
   it "includes the platform name in the footer" do
     expect(page).to have_content("Decidim")
   end

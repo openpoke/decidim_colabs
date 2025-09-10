@@ -3,3 +3,11 @@
 
 // Load images
 require.context("../../images", true)
+
+import AnimatedSearch from "./animated_search";
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (document.getElementById("form-search_topbar")) {
+    new AnimatedSearch();
+  }
+});
