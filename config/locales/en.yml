@@ -31,6 +31,14 @@
 
 en:
   noesfeinadedones:
+    proposals:
+      buttons:
+        first_button_cta: Being a leading woman
+        first_button_link: https://noesfeinadedones.cat/assemblies/projecte/f/1/proposals
+        second_button_cta: Request mentoring
+        second_button_link: https://noesfeinadedones.cat/assemblies/projecte/f/4/
+        third_button_cta: Private page for mentors
+        third_button_link: https://noesfeinadedones.cat/assemblies/forum-mentores
     footer:
       text: "An initiative of the i2CAT research center and Telecos.cat, within the framework of the Noesfeinadedones project, with file number SDC005/24/000358. With the support of the Generalitat de Catalunya and funded by the Next Generation EU program."
       generalitat: "Generalitat de Catalunya"

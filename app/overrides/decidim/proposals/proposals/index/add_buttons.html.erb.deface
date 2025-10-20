@@ -1,0 +1,18 @@
+<!-- insert_top "#proposals" -->
+
+<div class="grid grid-cols-3 gap-4">
+  <a href="<%= t("first_button_link", scope: "noesfeinadedones.proposals.buttons") %>"
+    class="button button__xl button__secondary w-full">
+    <span><%= t("first_button_cta", scope: "noesfeinadedones.proposals.buttons") %></span>
+  </a>
+
+  <a href="<%= t('second_button_link', scope: 'noesfeinadedones.proposals.buttons') %>"
+    class="button button__xl button__secondary w-full">
+    <span><%= t('second_button_cta', scope: 'noesfeinadedones.proposals.buttons') %></span>
+  </a>
+
+  <a href="<%= t('third_button_link', scope: 'noesfeinadedones.proposals.buttons') %>"
+    class="button button__xl button__secondary w-full">
+    <span><%= t('third_button_cta', scope: 'noesfeinadedones.proposals.buttons') %></span>
+  </a>
+</div>

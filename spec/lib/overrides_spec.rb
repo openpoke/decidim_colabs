@@ -13,7 +13,8 @@ checksums = [
       "/app/views/decidim/devise/sessions/new.html.erb" => "a8fe60cd10c1636822c252d5488a979d",
       "/app/views/decidim/shared/_login_modal.html.erb" => "0d615603bb45f7b209032578dda9fc72",
       "/app/views/layouts/decidim/header/_main_links_desktop.html.erb" => "770842a6d24d21281b6ba458966d1a45",
-      "/app/views/layouts/decidim/header/_main.html.erb" => "6d3c2d50fad1644c73427d4cb2dd368e"
+      "/app/views/layouts/decidim/header/_main.html.erb" => "6d3c2d50fad1644c73427d4cb2dd368e",
+      "/app/views/layouts/decidim/shared/_layout_two_col.html.erb" => "67009d1d524eb63e6cb3e5ff206f4ab5"
     }
   }
 ]
