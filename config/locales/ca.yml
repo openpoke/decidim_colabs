@@ -33,6 +33,7 @@ ca:
   noesfeinadedones:
     proposals:
       buttons:
+        show: "true"
         first_button_cta: Ser dona referent
         first_button_link: https://noesfeinadedones.cat/assemblies/projecte/f/1/proposals
         second_button_cta: Demanar una mentoria

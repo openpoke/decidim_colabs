@@ -1,18 +1,26 @@
 <!-- insert_top "#proposals" -->
 
-<div class="grid md:grid-cols-3 gap-4">
-  <a href="<%= t("first_button_link", scope: "noesfeinadedones.proposals.buttons") %>"
-    class="button button__xl button__secondary w-full">
-    <span><%= t("first_button_cta", scope: "noesfeinadedones.proposals.buttons") %></span>
-  </a>
+<% if t("noesfeinadedones.proposals.buttons.show") != "false" %>
+  <div class="grid md:grid-cols-3 gap-4">
+    <% if t("noesfeinadedones.proposals.buttons.first_button_link") != '' %>
+      <a href="<%= t("first_button_link", scope: "noesfeinadedones.proposals.buttons") %>"
+        class="button button__xl button__secondary w-full">
+        <span><%= t("first_button_cta", scope: "noesfeinadedones.proposals.buttons") %></span>
+      </a>
+    <% end %>
 
-  <a href="<%= t('second_button_link', scope: 'noesfeinadedones.proposals.buttons') %>"
-    class="button button__xl button__secondary w-full">
-    <span><%= t('second_button_cta', scope: 'noesfeinadedones.proposals.buttons') %></span>
-  </a>
+    <% if t("noesfeinadedones.proposals.buttons.first_button_link") != "" %>
+      <a href="<%= t('second_button_link', scope: 'noesfeinadedones.proposals.buttons') %>"
+        class="button button__xl button__secondary w-full">
+        <span><%= t('second_button_cta', scope: 'noesfeinadedones.proposals.buttons') %></span>
+      </a>
+    <% end %>
 
-  <a href="<%= t('third_button_link', scope: 'noesfeinadedones.proposals.buttons') %>"
-    class="button button__xl button__secondary w-full">
-    <span><%= t('third_button_cta', scope: 'noesfeinadedones.proposals.buttons') %></span>
-  </a>
-</div>
+    <% if t("noesfeinadedones.proposals.buttons.first_button_link") != "" %>
+      <a href="<%= t('third_button_link', scope: 'noesfeinadedones.proposals.buttons') %>"
+        class="button button__xl button__secondary w-full">
+        <span><%= t('third_button_cta', scope: 'noesfeinadedones.proposals.buttons') %></span>
+      </a>
+    <% end %>
+  </div>
+<% end %>

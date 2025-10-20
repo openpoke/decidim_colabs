@@ -33,6 +33,7 @@ en:
   noesfeinadedones:
     proposals:
       buttons:
+        show: "true"
         first_button_cta: Being a leading woman
         first_button_link: https://noesfeinadedones.cat/assemblies/projecte/f/1/proposals
         second_button_cta: Request mentoring
