@@ -33,7 +33,7 @@ en:
   noesfeinadedones:
     footer:
       text: "An initiative of the i2CAT research center and Telecos.cat, within the framework of the Noesfeinadedones project, with file number SDC005/24/000358. With the support of the Generalitat de Catalunya and funded by the Next Generation EU program."
-      generalitat: "Generalitat de Catalunya"
+      generalitat_empresa_i_treball: "Department of Business and Labor. Generalitat de Catalunya" 
       telecos: "Catalan Association of Telecommunications Engineering"
       i2cat: "i2CAT Foundation"
       nextgeneration: "Financed by the European Union. Next Generation EU."
