@@ -31,6 +31,15 @@
 
 ca:
   noesfeinadedones:
+    proposals:
+      buttons:
+        show: "true"
+        first_button_cta: Ser dona referent
+        first_button_link: https://noesfeinadedones.cat/assemblies/projecte/f/1/proposals
+        second_button_cta: Demanar una mentoria
+        second_button_link: https://noesfeinadedones.cat/assemblies/projecte/f/4/
+        third_button_cta: Pàgina privada mentores
+        third_button_link: https://noesfeinadedones.cat/assemblies/forum-mentores
     footer:
       text: "Una iniciativa del centre de recerca i2CAT i de Telecos.cat, en el marc del projecte Noesfeinadedones, amb número d’expedient SDC005/24/000358. Amb el suport de la Generalitat de Catalunya i finançada pel programa Next Generation EU."
       generalitat: "Generalitat de Catalunya"

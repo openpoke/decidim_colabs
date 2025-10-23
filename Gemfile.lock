@@ -9,10 +9,10 @@ GIT
 
 GIT
   remote: https://github.com/decidim-ice/decidim-module-decidim_awesome.git
-  revision: d2f17b796ea4fd1422250d9b626e6da1606a0c2d
-  branch: main
+  revision: b6b98f16c89395e6239bed143f782615438ebdc8
+  branch: release/0.29-stable
   specs:
-    decidim-decidim_awesome (0.12.4)
+    decidim-decidim_awesome (0.12.5)
       active_hashcash (~> 0.4.0)
       decidim-admin (>= 0.29.1, < 0.30)
       decidim-core (>= 0.29.1, < 0.30)
@@ -21,7 +21,8 @@ GIT
 
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: f3bf19e23167c4fb2710c093110d324d492594e8
+  revision: 7ba58b002231d28bbe5dbaf0105b067b70219439
+  ref: 7ba58b002231d28bbe5dbaf0105b067b70219439
   branch: release/0.29-stable
   specs:
     decidim (0.29.4)
@@ -204,8 +205,8 @@ GIT
 
 GIT
   remote: https://github.com/openpoke/decidim-module-alternative_landing.git
-  revision: 98e937b4b436e85b604eae07ae9dd7877d850f06
-  branch: feat/0.29_content_block_sidebar_2_stack
+  revision: c64f899dce92ba2d2e52dd1835e97833884f1341
+  branch: release/0.29-stable
   specs:
     decidim-alternative_landing (0.5.0)
       decidim-admin (>= 0.29.0, < 0.30)
@@ -214,8 +215,8 @@ GIT
 
 GIT
   remote: https://github.com/openpoke/decidim-module-term_customizer.git
-  revision: 1f61d02b13fada32b9b4e0a4adb716e6ed30bcd9
-  branch: main
+  revision: 12d3c4f09e0a136e3d5533966c0d983edbb02564
+  branch: release/0.29-stable
   specs:
     decidim-term_customizer (0.29.1)
       decidim-admin (~> 0.29.0)
@@ -311,14 +312,14 @@ GEM
     base64 (0.3.0)
     batch-loader (1.5.0)
     bcrypt (3.1.20)
-    better_html (2.1.1)
-      actionview (>= 6.0)
-      activesupport (>= 6.0)
+    better_html (2.2.0)
+      actionview (>= 7.0)
+      activesupport (>= 7.0)
       ast (~> 2.0)
       erubi (~> 1.4)
       parser (>= 2.4)
       smart_properties
-    bigdecimal (3.2.3)
+    bigdecimal (3.3.1)
     bindex (0.8.1)
     bootsnap (1.18.6)
       msgpack (~> 1.2)
@@ -353,7 +354,7 @@ GEM
     charlock_holmes (0.7.9)
     childprocess (5.1.0)
       logger (~> 1.5)
-    commonmarker (0.23.11)
+    commonmarker (0.23.12)
     concurrent-ruby (1.3.4)
     connection_pool (2.5.4)
     crack (1.0.0)
@@ -411,7 +412,7 @@ GEM
       temple
     erubi (1.13.1)
     escape_utils (1.3.0)
-    et-orbi (1.3.0)
+    et-orbi (1.4.0)
       tzinfo
     excon (1.3.0)
       logger
@@ -419,7 +420,7 @@ GEM
       html-pipeline (~> 2.9)
     factory_bot (6.5.5)
       activesupport (>= 6.1.0)
-    factory_bot_rails (6.5.0)
+    factory_bot_rails (6.5.1)
       factory_bot (~> 6.5)
       railties (>= 6.1.0)
     faker (3.5.2)
@@ -467,21 +468,21 @@ GEM
       mime-types
     fog-local (0.9.0)
       fog-core (>= 1.27, < 3.0)
-    formatador (1.2.0)
+    formatador (1.2.1)
       reline
     foundation_rails_helper (4.0.1)
       actionpack (>= 4.1, < 7.1)
       activemodel (>= 4.1, < 7.1)
       activesupport (>= 4.1, < 7.1)
       railties (>= 4.1, < 7.1)
-    fugit (1.11.2)
-      et-orbi (~> 1, >= 1.2.11)
+    fugit (1.12.1)
+      et-orbi (~> 1.4)
       raabro (~> 1.4)
     gemoji (3.0.1)
-    geocoder (1.8.5)
+    geocoder (1.8.6)
       base64 (>= 0.1.0)
       csv (>= 3.0.0)
-    globalid (1.2.1)
+    globalid (1.3.0)
       activesupport (>= 6.1)
     graphql (2.2.17)
       base64
@@ -493,7 +494,7 @@ GEM
       gemoji (~> 3.0)
       graphql (~> 2.0)
       html-pipeline (~> 2.14, >= 2.14.3)
-    hashdiff (1.2.0)
+    hashdiff (1.2.1)
     hashie (5.0.0)
     highline (3.1.2)
       reline
@@ -514,7 +515,7 @@ GEM
       rainbow (>= 2.2.2, < 4.0)
       ruby-progressbar (~> 1.8, >= 1.8.1)
       terminal-table (>= 1.5.1)
-    icalendar (2.11.2)
+    icalendar (2.12.0)
       base64
       ice_cube (~> 0.16)
       logger
@@ -565,23 +566,23 @@ GEM
       net-imap
       net-pop
       net-smtp
-    marcel (1.0.4)
+    marcel (1.1.0)
     matrix (0.4.3)
     method_source (1.1.0)
     mime-types (3.7.0)
       logger
       mime-types-data (~> 3.2025, >= 3.2025.0507)
-    mime-types-data (3.2025.0902)
+    mime-types-data (3.2025.0924)
     mini_magick (4.13.2)
     mini_mime (1.1.5)
-    minitest (5.25.5)
+    minitest (5.26.0)
     msgpack (1.8.0)
     multi_xml (0.7.2)
       bigdecimal (~> 3.1)
     multipart-post (2.4.1)
     net-http-persistent (4.0.6)
       connection_pool (~> 2.2, >= 2.2.4)
-    net-imap (0.5.10)
+    net-imap (0.5.12)
       date
       net-protocol
     net-pop (0.1.2)
@@ -591,38 +592,39 @@ GEM
     net-smtp (0.3.4)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.18.9-aarch64-linux-gnu)
+    nokogiri (1.18.10-aarch64-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.18.9-aarch64-linux-musl)
+    nokogiri (1.18.10-aarch64-linux-musl)
       racc (~> 1.4)
-    nokogiri (1.18.9-arm-linux-gnu)
+    nokogiri (1.18.10-arm-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.18.9-arm-linux-musl)
+    nokogiri (1.18.10-arm-linux-musl)
       racc (~> 1.4)
-    nokogiri (1.18.9-arm64-darwin)
+    nokogiri (1.18.10-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.18.9-x86_64-darwin)
+    nokogiri (1.18.10-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.18.9-x86_64-linux-gnu)
+    nokogiri (1.18.10-x86_64-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.18.9-x86_64-linux-musl)
+    nokogiri (1.18.10-x86_64-linux-musl)
       racc (~> 1.4)
-    oauth (1.1.0)
-      oauth-tty (~> 1.0, >= 1.0.1)
+    oauth (1.1.2)
+      oauth-tty (~> 1.0, >= 1.0.6)
       snaky_hash (~> 2.0)
-      version_gem (~> 1.1)
-    oauth-tty (1.0.5)
-      version_gem (~> 1.1, >= 1.1.1)
-    oauth2 (2.0.14)
+      version_gem (~> 1.1, >= 1.1.9)
+    oauth-tty (1.0.6)
+      version_gem (~> 1.1, >= 1.1.9)
+    oauth2 (2.0.17)
       faraday (>= 0.17.3, < 4.0)
       jwt (>= 1.0, < 4.0)
       logger (~> 1.2)
       multi_xml (~> 0.5)
       rack (>= 1.2, < 4)
       snaky_hash (~> 2.0, >= 2.0.3)
-      version_gem (~> 1.1, >= 1.1.8)
-    omniauth (2.1.3)
+      version_gem (~> 1.1, >= 1.1.9)
+    omniauth (2.1.4)
       hashie (>= 3.4.6)
+      logger
       rack (>= 2.2.3)
       rack-protection
     omniauth-facebook (5.0.0)
@@ -645,7 +647,7 @@ GEM
     omniauth-twitter (1.4.0)
       omniauth-oauth (~> 1.1)
       rack
-    openssl (3.3.0)
+    openssl (3.3.1)
     orm_adapter (0.5.0)
     ostruct (0.6.3)
     paper_trail (12.3.0)
@@ -678,8 +680,8 @@ GEM
       nio4r (~> 2.0)
     raabro (1.4.0)
     racc (1.8.1)
-    rack (2.2.17)
-    rack-attack (6.7.0)
+    rack (2.2.20)
+    rack-attack (6.8.0)
       rack (>= 1.0, < 4)
     rack-cors (1.1.1)
       rack (>= 2.0.0)
@@ -736,17 +738,17 @@ GEM
       ffi (~> 1.0)
     redcarpet (3.6.1)
     redis (4.8.1)
-    redis-client (0.25.2)
+    redis-client (0.26.1)
       connection_pool
-    regexp_parser (2.11.2)
+    regexp_parser (2.11.3)
     reline (0.6.2)
       io-console (~> 0.5)
     request_store (1.5.1)
       rack (>= 1.4)
-    responders (3.1.1)
-      actionpack (>= 5.2)
-      railties (>= 5.2)
-    rexml (3.4.2)
+    responders (3.2.0)
+      actionpack (>= 7.0)
+      railties (>= 7.0)
+    rexml (3.4.4)
     rspec (3.13.1)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
@@ -762,7 +764,7 @@ GEM
     rspec-html-matchers (0.10.0)
       nokogiri (~> 1)
       rspec (>= 3.0.0.a)
-    rspec-mocks (3.13.5)
+    rspec-mocks (3.13.6)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-rails (6.1.5)
@@ -775,7 +777,7 @@ GEM
       rspec-support (~> 3.13)
     rspec-retry (0.6.2)
       rspec-core (> 3.3)
-    rspec-support (3.13.5)
+    rspec-support (3.13.6)
     rspec_junit_formatter (0.6.0)
       rspec-core (>= 2, < 4, != 2.12.0)
     rubocop (1.65.1)
@@ -789,7 +791,7 @@ GEM
       rubocop-ast (>= 1.31.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
-    rubocop-ast (1.46.0)
+    rubocop-ast (1.47.1)
       parser (>= 3.3.7.2)
       prism (~> 1.4)
     rubocop-capybara (2.21.0)
@@ -825,9 +827,11 @@ GEM
     rubyzip (2.3.2)
     sassc (2.4.0)
       ffi (~> 1.9)
-    selenium-webdriver (4.35.0)
+    selenium-webdriver (4.36.0)
       base64 (~> 0.2)
+      json (<= 2.13.2)
       logger (~> 1.4)
+      prism (~> 1.0, < 1.5)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 4.0)
       websocket (~> 1.0)
