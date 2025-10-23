@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = { github: "decidim/decidim", branch: "release/0.29-stable", ref: "7ba58b002231d28bbe5dbaf0105b067b70219439"}.freeze
+DECIDIM_VERSION = { github: "decidim/decidim", branch: "release/0.29-stable", ref: "7ba58b002231d28bbe5dbaf0105b067b70219439" }.freeze
 gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
